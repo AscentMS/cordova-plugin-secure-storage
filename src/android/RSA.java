@@ -64,7 +64,9 @@ public class RSA {
             KeyInfo keyInfo;
             KeyFactory factory = KeyFactory.getInstance(privateKey.getAlgorithm(), KEYSTORE_PROVIDER);
             keyInfo = factory.getKeySpec(privateKey, KeyInfo.class);
-            return keyInfo.isInsideSecureHardware();
+            
+            return keyInfo.getKeySize() > 0;
+            //return keyInfo.isInsideSecureHardware();
         } catch (Exception e) {
             Log.i(TAG, "Checking encryption keys failed.", e);
             return false;
