@@ -1,5 +1,9 @@
 # SecureStorage plugin for Apache Cordova
 
+[![NPM](https://nodei.co/npm/cordova-plugin-secure-storage-echo.png?mini=true)](https://nodei.co/npm/cordova-plugin-secure-storage-echo/)
+
+##### Forked from [Crypho/cordova-plugin-secure-storage](https://github.com/Crypho/cordova-plugin-secure-storage) in a effort to keep that project alive. Thank you @ggozad.
+
 ## Introduction
 
 This plugin is for use with [Apache Cordova](http://cordova.apache.org/) and allows your application to securely store secrets
@@ -29,13 +33,7 @@ The plugin can be installed via the Cordova command line interface:
 - Run the command:
 
 ```sh
-cordova plugin add cordova-plugin-secure-storage
-```
-
-or if you want to be running the development version,
-
-```sh
-cordova plugin add https://github.com/crypho/cordova-plugin-secure-storage.git
+cordova plugin add cordova-plugin-secure-storage-echo
 ```
 
 ## <a name="plugin_api"></a> Plugin API
